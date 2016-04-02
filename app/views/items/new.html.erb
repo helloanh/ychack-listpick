@@ -1,0 +1,38 @@
+
+<div class="center-block">
+
+  <h2 class="text-center">Add an Item</h2>
+
+  <%= bootstrap_form_for(new_item_form, layout: :horizontal, label_col: "col-sm-3", control_col: "col-sm-9") do |f| %>
+
+    <% if new_item_form.errors.any? %>
+      <div class='alert alert-dismissable'>
+        <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+        <div id="error_explanation">
+          <h2><%= pluralize(new_item_form.errors.count, "error") %></h2>
+          <ul>
+            <% new_item_form.errors.full_messages.each do |msg| %>
+              <li> * <%= msg %></li>    
+            <% end %>
+          </ul>
+        </div>
+      </div>
+    <% end %>
+
+    <%= f.text_field :name %>
+    <%= f.text_field :list_name %>
+    <%= f.text_field :description %>
+    <%= f.text_field :img_url %>
+    <%= f.text_field :rscope_unit %>  
+    <%= f.number_field :rscope_quantity %>
+    <div class="col-sm-offset-3 col-sm-10">
+      <%= f.submit %>
+    </div>
+  <% end %>
+<div/>
+
+
+
+
+
+

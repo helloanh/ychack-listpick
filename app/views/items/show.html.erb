@@ -1,0 +1,21 @@
+<!--
+ITEM SHOW
+
+# available methods:
+#
+# item   - to display
+#        - responds to:
+#        - id :integer
+#        - name :string
+#        - img_url :string
+#        - description :text
+-->
+
+
+ <h1> <%= @item.name %> </h1>
+
+<div class="container">
+  <%= @item.img_url %>
+  <p class="item-description"> <%= @item.description %> <p>
+</div>
+

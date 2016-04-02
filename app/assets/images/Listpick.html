@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<!-- saved from url=(0022)http://localhost:3000/ -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <title>Listpick</title>
+
+  <!-- icons setup -->
+  <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+
+  <!-- Twitter Bootstrap Setup  -->
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+
+
+  <!-- google fonts -->
+  <link href="./Listpick_files/css" rel="stylesheet" type="text/css">
+  <link href="./Listpick_files/css(1)" rel="stylesheet" type="text/css">
+
+  <link data-turbolinks-track="true" href="http://localhost:3000/assets/base_styles.css?body=1" media="all" rel="stylesheet">
+<link data-turbolinks-track="true" href="http://localhost:3000/assets/color_pallete.css?body=1" media="all" rel="stylesheet">
+<link data-turbolinks-track="true" href="http://localhost:3000/assets/fonts.css?body=1" media="all" rel="stylesheet">
+<link data-turbolinks-track="true" href="http://localhost:3000/assets/home_page_web.css?body=1" media="all" rel="stylesheet">
+<link data-turbolinks-track="true" href="http://localhost:3000/assets/navbar.css?body=1" media="all" rel="stylesheet">
+<link data-turbolinks-track="true" href="http://localhost:3000/assets/normalize.css?body=1" media="all" rel="stylesheet">
+<link data-turbolinks-track="true" href="http://localhost:3000/assets/scaffold.css?body=1" media="all" rel="stylesheet">
+<link data-turbolinks-track="true" href="http://localhost:3000/assets/style.css?body=1" media="all" rel="stylesheet">
+<link data-turbolinks-track="true" href="http://localhost:3000/assets/rails_bootstrap_forms.css?body=1" media="all" rel="stylesheet">
+<link data-turbolinks-track="true" href="http://localhost:3000/assets/application.css?body=1" media="all" rel="stylesheet">
+  <script data-turbolinks-track="true" src="./Listpick_files/jquery.js"></script><style type="text/css"></style><style type="text/css"></style>
+<script data-turbolinks-track="true" src="./Listpick_files/jquery_ujs.js"></script>
+<script data-turbolinks-track="true" src="./Listpick_files/turbolinks.js"></script>
+<script data-turbolinks-track="true" src="./Listpick_files/facebook.js"></script>
+<script data-turbolinks-track="true" src="./Listpick_files/application.js"></script>
+  <meta content="authenticity_token" name="csrf-param">
+<meta content="qCdr+Mjcwf8+KNWqMXZlp9LjH+zh+wRIjGwjZ+c0MOc=" name="csrf-token">
+
+  <!-- Latest compiled and minified JavaScript -->
+  <script src="./Listpick_files/bootstrap.min.js"></script>
+  <meta name="viewport" content="initial-scale=1">
+<style type="text/css">.fb_hidden{position:absolute;top:-10000px;z-index:10001}.fb_invisible{display:none}.fb_reset{background:none;border:0;border-spacing:0;color:#000;cursor:auto;direction:ltr;font-family:"lucida grande", tahoma, verdana, arial, sans-serif;font-size:11px;font-style:normal;font-variant:normal;font-weight:normal;letter-spacing:normal;line-height:1;margin:0;overflow:visible;padding:0;text-align:left;text-decoration:none;text-indent:0;text-shadow:none;text-transform:none;visibility:visible;white-space:normal;word-spacing:normal}.fb_reset>div{overflow:hidden}.fb_link img{border:none}
+.fb_dialog{background:rgba(82, 82, 82, .7);position:absolute;top:-10000px;z-index:10001}.fb_reset .fb_dialog_legacy{overflow:visible}.fb_dialog_advanced{padding:10px;-moz-border-radius:8px;-webkit-border-radius:8px;border-radius:8px}.fb_dialog_content{background:#fff;color:#333}.fb_dialog_close_icon{background:url(http://static.ak.fbcdn.net/rsrc.php/v2/yq/r/IE9JII6Z1Ys.png) no-repeat scroll 0 0 transparent;_background-image:url(http://static.ak.fbcdn.net/rsrc.php/v2/yL/r/s816eWC-2sl.gif);cursor:pointer;display:block;height:15px;position:absolute;right:18px;top:17px;width:15px}.fb_dialog_mobile .fb_dialog_close_icon{top:5px;left:5px;right:auto}.fb_dialog_padding{background-color:transparent;position:absolute;width:1px;z-index:-1}.fb_dialog_close_icon:hover{background:url(http://static.ak.fbcdn.net/rsrc.php/v2/yq/r/IE9JII6Z1Ys.png) no-repeat scroll 0 -15px transparent;_background-image:url(http://static.ak.fbcdn.net/rsrc.php/v2/yL/r/s816eWC-2sl.gif)}.fb_dialog_close_icon:active{background:url(http://static.ak.fbcdn.net/rsrc.php/v2/yq/r/IE9JII6Z1Ys.png) no-repeat scroll 0 -30px transparent;_background-image:url(http://static.ak.fbcdn.net/rsrc.php/v2/yL/r/s816eWC-2sl.gif)}.fb_dialog_loader{background-color:#f2f2f2;border:1px solid #606060;font-size:24px;padding:20px}.fb_dialog_top_left,.fb_dialog_top_right,.fb_dialog_bottom_left,.fb_dialog_bottom_right{height:10px;width:10px;overflow:hidden;position:absolute}.fb_dialog_top_left{background:url(http://static.ak.fbcdn.net/rsrc.php/v2/ye/r/8YeTNIlTZjm.png) no-repeat 0 0;left:-10px;top:-10px}.fb_dialog_top_right{background:url(http://static.ak.fbcdn.net/rsrc.php/v2/ye/r/8YeTNIlTZjm.png) no-repeat 0 -10px;right:-10px;top:-10px}.fb_dialog_bottom_left{background:url(http://static.ak.fbcdn.net/rsrc.php/v2/ye/r/8YeTNIlTZjm.png) no-repeat 0 -20px;bottom:-10px;left:-10px}.fb_dialog_bottom_right{background:url(http://static.ak.fbcdn.net/rsrc.php/v2/ye/r/8YeTNIlTZjm.png) no-repeat 0 -30px;right:-10px;bottom:-10px}.fb_dialog_vert_left,.fb_dialog_vert_right,.fb_dialog_horiz_top,.fb_dialog_horiz_bottom{position:absolute;background:#525252;filter:alpha(opacity=70);opacity:.7}.fb_dialog_vert_left,.fb_dialog_vert_right{width:10px;height:100%}.fb_dialog_vert_left{margin-left:-10px}.fb_dialog_vert_right{right:0;margin-right:-10px}.fb_dialog_horiz_top,.fb_dialog_horiz_bottom{width:100%;height:10px}.fb_dialog_horiz_top{margin-top:-10px}.fb_dialog_horiz_bottom{bottom:0;margin-bottom:-10px}.fb_dialog_iframe{line-height:0}.fb_dialog_content .dialog_title{background:#6d84b4;border:1px solid #3b5998;color:#fff;font-size:14px;font-weight:bold;margin:0}.fb_dialog_content .dialog_title>span{background:url(http://static.ak.fbcdn.net/rsrc.php/v2/yd/r/Cou7n-nqK52.gif) no-repeat 5px 50%;float:left;padding:5px 0 7px 26px}body.fb_hidden{-webkit-transform:none;height:100%;margin:0;overflow:visible;position:absolute;top:-10000px;left:0;width:100%}.fb_dialog.fb_dialog_mobile.loading{background:url(http://static.ak.fbcdn.net/rsrc.php/v2/ya/r/3rhSv5V8j3o.gif) white no-repeat 50% 50%;min-height:100%;min-width:100%;overflow:hidden;position:absolute;top:0;z-index:10001}.fb_dialog.fb_dialog_mobile.loading.centered{max-height:590px;min-height:590px;max-width:500px;min-width:500px}#fb-root #fb_dialog_ipad_overlay{background:rgba(0, 0, 0, .45);position:absolute;left:0;top:0;width:100%;min-height:100%;z-index:10000}#fb-root #fb_dialog_ipad_overlay.hidden{display:none}.fb_dialog.fb_dialog_mobile.loading iframe{visibility:hidden}.fb_dialog_content .dialog_header{-webkit-box-shadow:white 0 1px 1px -1px inset;background:-webkit-gradient(linear, 0% 0%, 0% 100%, from(#738ABA), to(#2C4987));border-bottom:1px solid;border-color:#1d4088;color:#fff;font:14px Helvetica, sans-serif;font-weight:bold;text-overflow:ellipsis;text-shadow:rgba(0, 30, 84, .296875) 0 -1px 0;vertical-align:middle;white-space:nowrap}.fb_dialog_content .dialog_header table{-webkit-font-smoothing:subpixel-antialiased;height:43px;width:100%}.fb_dialog_content .dialog_header td.header_left{font-size:12px;padding-left:5px;vertical-align:middle;width:60px}.fb_dialog_content .dialog_header td.header_right{font-size:12px;padding-right:5px;vertical-align:middle;width:60px}.fb_dialog_content .touchable_button{background:-webkit-gradient(linear, 0% 0%, 0% 100%, from(#4966A6), color-stop(.5, #355492), to(#2A4887));border:1px solid #29447e;-webkit-background-clip:padding-box;-webkit-border-radius:3px;-webkit-box-shadow:rgba(0, 0, 0, .117188) 0 1px 1px inset, rgba(255, 255, 255, .167969) 0 1px 0;display:inline-block;margin-top:3px;max-width:85px;line-height:18px;padding:4px 12px;position:relative}.fb_dialog_content .dialog_header .touchable_button input{border:none;background:none;color:#fff;font:12px Helvetica, sans-serif;font-weight:bold;margin:2px -12px;padding:2px 6px 3px 6px;text-shadow:rgba(0, 30, 84, .296875) 0 -1px 0}.fb_dialog_content .dialog_header .header_center{color:#fff;font-size:16px;font-weight:bold;line-height:18px;text-align:center;vertical-align:middle}.fb_dialog_content .dialog_content{background:url(http://static.ak.fbcdn.net/rsrc.php/v2/y9/r/jKEcVPZFk-2.gif) no-repeat 50% 50%;border:1px solid #555;border-bottom:0;border-top:0;height:150px}.fb_dialog_content .dialog_footer{background:#f2f2f2;border:1px solid #555;border-top-color:#ccc;height:40px}#fb_dialog_loader_close{float:left}.fb_dialog.fb_dialog_mobile .fb_dialog_close_button{text-shadow:rgba(0, 30, 84, .296875) 0 -1px 0}.fb_dialog.fb_dialog_mobile .fb_dialog_close_icon{visibility:hidden}
+.fb_iframe_widget{display:inline-block;position:relative}.fb_iframe_widget span{display:inline-block;position:relative;text-align:justify}.fb_iframe_widget iframe{position:absolute}.fb_iframe_widget_lift{z-index:1}.fb_hide_iframes iframe{position:relative;left:-10000px}.fb_iframe_widget_loader{position:relative;display:inline-block}.fb_iframe_widget_fluid{display:inline}.fb_iframe_widget_fluid span{width:100%}.fb_iframe_widget_loader iframe{min-height:32px;z-index:2;zoom:1}.fb_iframe_widget_loader .FB_Loader{background:url(http://static.ak.fbcdn.net/rsrc.php/v2/y9/r/jKEcVPZFk-2.gif) no-repeat;height:32px;width:32px;margin-left:-16px;position:absolute;left:50%;z-index:4}
+.fb_connect_bar_container div,.fb_connect_bar_container span,.fb_connect_bar_container a,.fb_connect_bar_container img,.fb_connect_bar_container strong{background:none;border-spacing:0;border:0;direction:ltr;font-style:normal;font-variant:normal;letter-spacing:normal;line-height:1;margin:0;overflow:visible;padding:0;text-align:left;text-decoration:none;text-indent:0;text-shadow:none;text-transform:none;visibility:visible;white-space:normal;word-spacing:normal;vertical-align:baseline}.fb_connect_bar_container{position:fixed;left:0 !important;right:0 !important;height:42px !important;padding:0 25px !important;margin:0 !important;vertical-align:middle !important;border-bottom:1px solid #333 !important;background:#3b5998 !important;z-index:99999999 !important;overflow:hidden !important}.fb_connect_bar_container_ie6{position:absolute;top:expression(document.compatMode=="CSS1Compat"? document.documentElement.scrollTop+"px":body.scrollTop+"px")}.fb_connect_bar{position:relative;margin:auto;height:100%;width:100%;padding:6px 0 0 0 !important;background:none;color:#fff !important;font-family:"lucida grande", tahoma, verdana, arial, sans-serif !important;font-size:13px !important;font-style:normal !important;font-variant:normal !important;font-weight:normal !important;letter-spacing:normal !important;line-height:1 !important;text-decoration:none !important;text-indent:0 !important;text-shadow:none !important;text-transform:none !important;white-space:normal !important;word-spacing:normal !important}.fb_connect_bar a:hover{color:#fff}.fb_connect_bar .fb_profile img{height:30px;width:30px;vertical-align:middle;margin:0 6px 5px 0}.fb_connect_bar div a,.fb_connect_bar span,.fb_connect_bar span a{color:#bac6da;font-size:11px;text-decoration:none}.fb_connect_bar .fb_buttons{float:right;margin-top:7px}
+.fbpluginrecommendationsbarleft,.fbpluginrecommendationsbarright{position:fixed !important;bottom:0;z-index:999}.fbpluginrecommendationsbarleft{left:10px}.fbpluginrecommendationsbarright{right:10px}</style></head>
+<body><div id="fb-root" class=" fb_reset" webmemes_parsed="1"><div style="position: absolute; top: -10000px; height: 0px; width: 0px;" webmemes_parsed="1"><div></div></div></div>
+<div class="container-fluid" webmemes_parsed="1">
+  <nav class="navbar" role="navigation">
+    <div class="container" webmemes_parsed="1">
+      <ul class="nav nav-pills">
+        <li class="nav nav-pills" webmemes_parsed="1">
+          <a class="logo-font">
+            <div class="logo-checkbox brand" webmemes_parsed="1">
+              <img alt="logo image" src="./Listpick_files/lipcheck1.png">
+            </div>
+          </a>
+        </li>
+        <li webmemes_parsed="1">
+          <div class="navbar-header" webmemes_parsed="1">
+            <a href="http://localhost:3000/?class=navbar-brand&style=font-family%3A+%27Kreon%27%2C+serif%3B">Listpick</a>
+          </div>
+        </li>
+
+          <div class="navbar-list-items" webmemes_parsed="1">
+            <li class="navbar-text navbar-right" webmemes_parsed="1">
+              </li><li class="navbar-text navbar-right" webmemes_parsed="1"> Welcome, Anh Kim H </li>
+              <li class="navbar-text navbar-right" webmemes_parsed="1">
+                <i class="fa fa-plus-circle fa-lg" webmemes_parsed="1"> <a href="http://localhost:3000/items/new?class=navbar-text+navbar-right">Add</a> </i>
+              </li>
+
+              <li class="navbar-text navbar-right" webmemes_parsed="1">
+                <i class="fa fa-list-alt fa-lg" webmemes_parsed="1"><a href="http://localhost:3000/items?class=navbar-text+navbar-right">View</a></i>
+                </li>
+              <li class="navbar-text navbar-right" webmemes_parsed="1">
+                <a href="http://localhost:3000/signout" id="sign_out">Sign out</a> </li>
+            
+          </div>
+
+
+      </ul>
+    </div>
+  </nav>
+
+  <div class="container home-container" webmemes_parsed="1">
+<!-- Header -->
+    <div class="intro-header" webmemes_parsed="1">
+        <div class="container" webmemes_parsed="1">
+            <div class="row" webmemes_parsed="1">
+                <div class="col-lg-12" webmemes_parsed="1">
+                    <div class="intro-message" webmemes_parsed="1">
+                        <h1>Listpick</h1>
+                        <h3> info and tagline here</h3>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <!-- /.container -->
+
+    </div>
+    <!-- /.intro-header -->
+
+<!-- Page Content -->
+
+    <div class="content-section-a" webmemes_parsed="1">
+        <div class="container" webmemes_parsed="1">
+
+            <div class="row" webmemes_parsed="1">
+                <div class="col-lg-6 col-sm-7" webmemes_parsed="1">
+
+                    <div class="clearfix"></div>
+                      <h2 class="section-heading">About Listpick <br> </h2>
+                      <p class="lead" webmemes_parsed="1">Bacon ipsum dolor sit amet tenderloin salami pig, fatback pastrami ham hock shoulder bacon t-bone pork meatball. Pancetta ham turkey shankle turducken jerky. Jowl spare ribs short ribs andouille tongue shoulder.</p>
+                    </div>
+                <div class="col-lg-3 col-lg-offset-2 col-sm-4" webmemes_parsed="1">
+                    <img alt="Ipad" class="img-responsive" src="./Listpick_files/ipad.png">
+                </div>
+            </div>
+
+        </div>
+        <!-- /.container -->
+
+    </div>
+    <!-- /.content-section-a -->
+
+    <div class="content-section-a" webmemes_parsed="1">
+        <div class="container" webmemes_parsed="1">
+            <div class="row" webmemes_parsed="1">
+                <div class="col-lg-6 col-sm-7" webmemes_parsed="1">
+
+                    <div class="clearfix"></div>
+                    <h2 class="section-heading"> Mobile Features <br> </h2>
+                   <p class="lead" webmemes_parsed="1">Bacon ipsum dolor sit amet tenderloin salami pig, fatback pastrami ham hock shoulder bacon t-bone pork meatball. Pancetta ham turkey shankle turducken jerky. Jowl spare ribs short ribs andouille tongue shoulder.</p>
+                </div>
+                <div class="col-lg-3 col-lg-offset-2 col-sm-4" webmemes_parsed="1">
+                    <img alt="Phones" class="img-responsive" src="./Listpick_files/phones.png">
+                </div>
+            </div>
+        </div>
+        <!-- /.container -->
+    </div>
+    <!-- /.content-section-b -->
+
+
+  <aside class="call-to-action bg-primary">
+        <div class="container" webmemes_parsed="1">
+            <div class="row" webmemes_parsed="1">
+                <div style="padding-bottom: 15%; font-family: &#39;Kreon&#39;, serif;" class="col-lg-12 text-center" webmemes_parsed="1">
+                    <h3> Connect with Us  </h3>
+                    <ul class="list-inline">
+                        <li webmemes_parsed="1">
+                            <a href="http://localhost:3000/#"><i class="fa fa-facebook fa-fw fa-3x"></i></a>
+                        </li>
+                        <li webmemes_parsed="1">
+                            <a href="http://localhost:3000/#"><i class="fa fa-twitter fa-fw fa-3x"></i></a>
+                        </li>
+                        <li webmemes_parsed="1">
+                            <a href="http://localhost:3000/#"><i class="fa fa-dribbble fa-fw fa-3x"></i></a>
+                        </li>
+                    </ul>
+                    <a href="http://localhost:3000/#" class="btn btn-lg btn-light">Click Me!</a>
+                    <a href="http://localhost:3000/#" class="btn btn-lg btn-dark">Look at Me!</a>
+                </div>
+            </div>
+        </div>
+  </aside>
+</div>
+
+  <div id="footer" class="container" webmemes_parsed="1">
+      <nav class="navbar navbar-default navbar-fixed-bottom">
+          <div class="navbar-inner navbar-content-center" webmemes_parsed="1">
+              <p class="navbar-text navbar-right" webmemes_parsed="1">
+                <a href="http://localhost:3000/privacy?class=text-muted+credit">Privacy</a>
+              </p>
+              <p class="navbar-text navbar-right" webmemes_parsed="1">
+                <a href="http://localhost:3000/tos?class=text-+muted+credit">Terms of Service</a>
+              </p>
+          </div>
+      </nav>
+  </div>
+  <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+  <script src="./Listpick_files/jquery.min.js"></script>
+  <!-- Include all compiled plugins (below), or include individual files as needed -->
+
+
+
+</div></body></html>

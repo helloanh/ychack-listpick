@@ -1,0 +1,117 @@
+// import other sass partials
+@import 'color_pallete.css.scss';
+@import 'fonts.css.scss';
+
+// -------- navbar home page styles -----------
+
+.navbar {
+  background-color: $THEME_COLOR;
+  border-radius: 0;
+  border-style: solid;
+  border-bottom-color: $HIGHLIGHTS;
+  margin-bottom: 0;
+  height: 60px;
+}
+
+.navbar-text {
+  width: 4em;
+  padding-bottom: 2%;
+}
+
+.navbar-text#welcome {
+  width: 8em;
+}
+
+#footer p.navbar-text{
+  width: 10em;
+}
+
+
+.navbar-brand {
+  font-family: $font_logo;
+  font-size: 40px;
+  margin-left: auto;
+  margin-right: auto;
+  float: left;
+  width: 40px;
+  color: $TEXT_COLOR;
+}
+
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+
+li {
+    float: left;
+    display: inline;
+}
+
+a {
+    display: inline-block;
+    padding: 3%;
+    color: $vintage_blue;
+}
+
+a:visited {
+  color: $vintage_blue;
+}
+
+
+.logo-checkbox {
+  color: $TEXT_COLOR;
+  border-radius: 5px;
+  border: 3px solid white;
+  width: 30px;
+  height: 30px;
+  margin: 2%;
+  float: left;
+}
+
+.logo-font {
+  font-family: $font_logo;
+  font-size: 20px;
+  color: $silver;
+  display: inline;
+}
+
+.navbar-list-items {
+  font-family: $font_logo;
+  /*padding-left: 200px;*/
+  color: $TEXT_COLOR;
+}
+
+
+.navbar-header {
+  a {
+    position: relative;
+    font-family: $font_logo;
+    font-size: 2.5em;
+    color: $vintage_blue;
+    padding: 2%;
+    margin: 12%;
+  }
+}
+
+.navbar-list-items {
+  ul {
+    color: $vintage_blue;
+    font-size: 1.5em;
+  }
+}
+
+// home page styles
+.home-container {
+  text-align: center;
+}
+
+
+@media(max-width:767px) {
+  #logo, #welcome, #footer {
+    display:none;
+  }
+
+}

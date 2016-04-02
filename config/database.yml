@@ -1,0 +1,13 @@
+default: &default
+  adapter: postgresql
+  encoding: unicode
+  pool: 5
+
+development:
+  <<: *default
+  database: listpick_development
+
+test:
+  <<: *default
+  database: listpick_test
+

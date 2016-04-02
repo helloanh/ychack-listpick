@@ -1,0 +1,22 @@
+// import other sass partials
+@import 'color_pallete.css.scss';
+@import 'fonts.css.scss';
+
+.container-list-item {
+  text-align: center;
+}
+
+#itemName {
+  color: $light_khaki;
+  padding: 2%;
+  margin: 2%;
+  text-align: center;
+}
+
+#itemImage {
+  text-align: center;
+  img {
+    height: 200px;
+    border-radius: 5px;
+  }
+}

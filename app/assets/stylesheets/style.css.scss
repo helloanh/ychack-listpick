@@ -1,0 +1,17 @@
+// import other sass partials
+@import 'color_pallete.css.scss';
+@import 'fonts.css.scss';
+
+//import major styles sorted by user's interactions with pages
+@import 'base_styles.css.scss';
+
+@import 'navbar.css.scss';
+
+// home page web styles
+@import 'home_page_web.css.scss';
+
+// page view styles
+@import 'page_view.css.scss';
+
+// item list styles
+@import 'item_list.css.scss';

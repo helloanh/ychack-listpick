@@ -1,0 +1,51 @@
+<div class="center-block"
+<h2><%=@list.name%></h2>
+<h3>Say you have <%= @rscope.quantity %> <%= @rscope.unit %>. Would you rather...?</h3>
+  <div>
+
+    <a href='/picks?winner_id=<%= @items.first.id %>&loser_id=<%= @items.last.id %>&list_id=<%= @list.id %>'>
+      <%= @items.first.name %>
+      <img src="<%= @items.first.img_url%>">
+      <!-- image_tag(<%# @items.first.img_url%>) -->
+    </a>
+    <a href='/picks?loser_id=<%= @items.first.id %>&winner_id=<%= @items.last.id %>&list_id=<%= @list.id %>'>
+      <%= @items.last.name %>
+      <img src="<%= @items.last.img_url%>">
+      <!-- image_tag(<%# @items.last.img_url%>) -->
+    </a>
+
+  </div>
+</div>
+
+
+
+
+  <!--
+# available methods:
+#
+# rating - rating model object to be used in form
+#        - form needs to return:
+#          winner_id = item_id chosen
+#          loser_id  = item_id not chosen
+#          scope_id  = the id of the scope object used
+#          list_id   = id of the list used
+#
+# list   - the list object
+#        - responds to:
+#          - name :string
+#          - id :integer
+#
+# scope  - scope object for form
+#        - responds to:
+#          - unit :string
+#          - quantity :integer
+#          - id :integer
+#
+# items  - array with two items in it
+#
+# each item responds to:
+#        - id :integer
+#        - name :string
+#        - img_url :string
+#        - description :text -->
+

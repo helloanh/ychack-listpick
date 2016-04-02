@@ -1,0 +1,11 @@
+  <!-- search form -->
+  <%= form_tag "/search", :method => :get,
+        :class => "c-PageHead-srchForm" do %>
+      <%= search_field_tag :q, params[:q],
+            :placeholder => "enter search words separated by comma",
+            :class=> "l-PageHead-srchInpt"%>
+      <%= submit_tag "search", :name => "search",
+            :class => "l-PageHead-srchButn",
+            :id => "l-PageHead-srchButn" %>
+  <% end %>
+ 

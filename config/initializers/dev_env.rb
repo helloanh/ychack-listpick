@@ -1,0 +1,4 @@
+unless Rails.env.production?
+  ENV['FACEBOOK_KEY'] = '680193398726556'
+  ENV['FACEBOOK_SECRET'] = '9350f337e2742e37a08b3554a692c5d9'
+end

@@ -1,0 +1,54 @@
+<h2><%=@list_name%></h2>
+<h3>Say you have <%=@rscope%>. Would you rather...?</h3>
+  <div class="contestant">
+
+    <%@items.each do |item| %>
+      <img src="<%=item.img_url%>">
+      <br>
+      <%= item.name %>
+      <br> 
+    <%end%>
+  </div>
+    
+
+
+  <!--use form_tag instead??-->  
+  <%= bootstrap_form_for(@rating) do |f| %>
+    <%= f.text_field :name %>
+  <div class="contestant">
+    <img> <%= f.text_field :description %>
+  </div>
+
+  <%= f.submit %>
+  <% end %>
+
+  <!--
+# available methods:
+#
+# rating - rating model object to be used in form
+#        - form needs to return:
+#          winner_id = item_id chosen
+#          loser_id  = item_id not chosen
+#          scope_id  = the id of the scope object used
+#          list_id   = id of the list used
+#
+# list   - the list object
+#        - responds to: 
+#          - name :string
+#          - id :integer
+#
+# scope  - scope object for form
+#        - responds to:
+#          - unit :string
+#          - quantity :integer
+#          - id :integer
+#
+# items  - array with two items in it
+#
+# each item responds to: 
+#        - id :integer
+#        - name :string
+#        - img_url :string
+#        - description :text -->
+
+

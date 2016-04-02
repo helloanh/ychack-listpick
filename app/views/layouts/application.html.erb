@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Listpick</title>
+
+  <!-- icons setup -->
+  <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+
+  <!-- Twitter Bootstrap Setup  -->
+  <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+
+
+  <!-- google fonts -->
+  <link href='http://fonts.googleapis.com/css?family=Lobster+Two' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Kreon' rel='stylesheet' type='text/css'>
+
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+
+  <!-- Latest compiled and minified JavaScript -->
+  <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+<div class="container-fluid">
+  <nav class="navbar" role="navigation">
+    <div class="container ">
+      <ul class="nav nav-pills">
+        <li class="nav nav-pills">
+          <a class="logo-font">
+            <div class="logo-checkbox brand">
+              <%= image_tag "lipcheck1.png", alt: "logo image" %>
+            </div>
+          </a>
+        </li>
+        <li>
+
+          <div class="navbar-header" id="logo">
+            <%= link_to "Listpick", controller: "home", action: "index", :class => "navbar-brand", :style => "margin-right: 10%;" %>
+          </div>
+        </li>
+
+        <% if current_user %>
+          <div class="navbar-list-items">
+            <li class="navbar-text navbar-right">
+              <li class="navbar-text navbar-right"  id="welcome"><%= current_user.name %> </li>
+
+              <li class="navbar-text navbar-right">
+                 <%= link_to controller: "items", action: "new", :class =>"navbar-text navbar-right" do%>
+                 <i class="fa fa-plus-circle fa-lg"></i>
+                 Add
+                 <% end %>
+              </li>
+
+              <li class="navbar-text navbar-right">
+                <%= link_to controller: "picks", action: "new", :class => "navbar-text navbar-right" do%>
+                <i class="fa fa-random fa-lg"></i>
+                Pick
+                <% end %>
+              </li>
+
+              <li class="navbar-text navbar-right">
+                <%= link_to controller: "items", action: "index", :class => "navbar-text navbar-right" do%>
+                <i class="fa fa-list-alt fa-lg"></i>
+                View
+                <% end %>
+              </li>
+              <li class="navbar-text navbar-right">
+                <%= link_to "Sign out", signout_path, id: "sign_out" %> </li>
+            </li>
+              <% else %>
+                <li>
+                  <div>
+                    <%= link_to "Sign in with Facebook", "/auth/facebook", id: "sign_in", :style => "font-family:'Lobster Two', cursive; width: 200px; height: 60px; margin-top: 5%; margin-left: 5%;", :class => "navbar-right" %>
+                  </div>
+                </li>
+            <% end %>
+          </div>
+      </ul>
+    </div>
+  </nav>
+  <% flash.each do |name, msg| %>
+  <div class='alert alert-dismissable'>
+    <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+    <div class="alert <%= alert_type(name) %> alert-dismissable">
+      <%= msg  %>
+    </div>
+  </div>
+  <% end %>
+
+  <%= yield %>
+  <div id="footer" class="container">
+      <nav class="navbar navbar-default navbar-fixed-bottom">
+          <div class="navbar-inner navbar-content-center">
+              <p class="navbar-text navbar-right">
+                <%= link_to "Privacy", controller: "home", action: "privacy", :class => "text-muted credit"  %>
+              </p>
+              <p class="navbar-text navbar-right">
+                <%= link_to "Terms of Service", controller: "home", action: "tos", :class => "text- muted credit" %>
+              </p>
+          </div>
+      </nav>
+  </div>
+  <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+  <!-- Include all compiled plugins (below), or include individual files as needed -->
+</body>
+</html>
+

@@ -1,0 +1,64 @@
+// import other sass partials
+@import 'color_pallete.css.scss';
+@import 'fonts.css.scss';
+
+// ---- start base styles
+
+
+body {
+  background-color: $BACKGROUND;
+  color: $medium_gray;
+}
+
+html, body {
+  height: 100%; width: 100%;
+}
+
+
+img {
+  height: 50px;
+  position: relative;
+  top: -15px;
+  right: 5px;
+}
+
+.container-fluid {
+  padding-left: 0px;
+  padding-right: 0px;
+}
+
+h2 {
+  font-family: $font_text;
+}
+
+
+a {
+ color: $TEXT_COLOR;
+}
+
+div {
+ #sign_in {
+    padding-right: -10%;
+    margin-right: -60%;
+    font-size: 1.25em;
+  }
+}
+
+a:hover {
+  text-decoration: none;
+  color: $milk_gray;
+}
+
+
+div {
+  .text-center {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+.row {
+  i {
+   margin-right: 10px;
+  }
+}
